@@ -1,0 +1,10 @@
+<!--INÍCIO DO MENU -->
+<div class="col-md-9 col-xs-12">
+
+    <pj-menu-item *ngFor="let item of menu | async" [menuItem]="item" (add)="shoppingCart.addItem($event)"></pj-menu-item>
+
+</div>
+<div class="col-md-3 col-xs-12">
+    <pj-shopping-cart #shoppingCart></pj-shopping-cart>
+</div>
+<!-- FIM DO MENU -->
